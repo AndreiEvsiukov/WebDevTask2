@@ -1,3 +1,42 @@
+/* Base styles */
+
 body {
-    font-size: 16;
+  font-family: 'Roboto', sans-serif;
+}
+/* End base styles */
+
+/* Header */
+#NavbarWhole {
+  padding: 1.7em 0 1.7em 0;
+  border: 1px solid lightgray;
+}
+
+#NavbarMainText {
+  font-size: 1.8em;
+}
+
+#navbarItems li:hover {
+  background-color: #E7E7E7;
+}
+
+
+/* Large devices only */
+@media (min-width: 1200px) {
+  #navbarItems {
+    visibility: hidden;
+  }
+}
+
+/* Midle-size devices only */
+@media (min-width: 576px) and (max-width: 1199px) {
+  #navbarItems {
+    visibility: hidden;
+  }
+}
+
+/* Small devices only */
+@media (max-width: 575px) {
+  #navbarItems {
+    visibility: visible;
+  }
 }
